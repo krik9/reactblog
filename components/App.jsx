@@ -1,9 +1,10 @@
 import React from 'react';
+import Posts from './Posts';
 
 function App(props){
     return (
-        <div>
-            <h1> Hello from inside App component {props.name}</h1>
+        <div className="app_container">
+            <Posts />
         </div >
     )
 }

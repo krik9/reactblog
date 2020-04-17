@@ -8,4 +8,4 @@ if (module.hot) {
 
 
 var rootElement = document.getElementById('root')
-ReactDOM.render(<App name={'jim'} />, rootElement)
+ReactDOM.render(<App />, rootElement)
