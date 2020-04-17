@@ -4,6 +4,14 @@ html, body{
     padding:20px;
 
 }
+
+.app_container{
+    width: 1200px;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
+
 .site-page-header {
     border: 1px solid rgb(235, 237, 240);
   }
