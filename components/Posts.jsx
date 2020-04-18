@@ -1,6 +1,6 @@
 import React from 'react';
 import { PageHeader } from 'antd';
-import Post from "./Post";
+import PostSnippet from "./PostSnippet";
 import api from "../mock_api";
 import _ from 'lodash';
 
@@ -19,7 +19,7 @@ const Posts = (props) => {
                 {
                     _.map(api, (article) => {
                         return (
-                            <Post
+                            <PostSnippet
                                 title={article.title}
                                 content={article.content}
                             />
