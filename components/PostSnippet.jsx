@@ -9,11 +9,17 @@ const PostSnippet = (props) => {
                 style={{ marginTop: 16 }}
                 type="inner"
                 title={props.title}
-                extra={<Link to={`/post/${props.id}`}>Read Full Article</Link>}
+                extra={
+                    <Link to={`/post/${props.id}`}>
+                        Read Full Article
+                    </Link>
+                }
             >
-             <p className="post_snippet_content">
-                 {props.content}
-             </p>
+                {props.content.split('\n').map((paragraph, idx) => {
+                    return <p key={idx}>{paragraph}</p>;
+                })
+
+                }
             </Card>
 
         </div>
