@@ -17,9 +17,10 @@ const Posts = (props) => {
             </div>
             <div className="articles_container">
                 {
-                    _.map(api, (article) => {
+                    _.map(api, (article,idx) => {
                         return (
                             <PostSnippet
+                                key={idx}
                                 title={article.title}
                                 content={article.content}
                             />
