@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card } from 'antd';
+import { Link } from '@reach/router';
 
 const PostSnippet = (props) => {
     return (
@@ -8,7 +9,7 @@ const PostSnippet = (props) => {
                 style={{ marginTop: 16 }}
                 type="inner"
                 title={props.title}
-                extra={<a href="#">More</a>}
+                extra={<Link to={`/post/${props.id}`}>Read Full Article</Link>}
             >
              <p className="post_snippet_content">
                  {props.content}

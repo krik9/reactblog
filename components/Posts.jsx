@@ -21,6 +21,7 @@ const Posts = (props) => {
                         return (
                             <PostSnippet
                                 key={idx}
+                                id={idx}
                                 title={article.title}
                                 content={article.content}
                             />

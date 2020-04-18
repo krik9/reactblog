@@ -1,11 +1,16 @@
 import React from 'react';
 import Posts from './Posts';
 import Post from './Post';
+import { Router } from '@reach/router';
 
-function App(props){
+function App(props) {
     return (
         <div className="app_container">
-            <Post />
+            <Router>
+            <Posts default />
+            <Post path="post/:id" />
+
+            </Router>
         </div >
     )
 }
