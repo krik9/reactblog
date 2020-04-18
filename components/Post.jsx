@@ -15,6 +15,7 @@ Ut vel suscipit sapien, ut ullamcorper nisi. Mauris laoreet faucibus dictum. Don
                         `
 
 const Post = (props) => {
+    console.log(props)
     return (
         <div className="post_container">
             <div className="page_header_container">
