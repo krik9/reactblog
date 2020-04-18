@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { PageHeader, Card } from 'antd';
 
 var content = `
@@ -15,13 +15,15 @@ Ut vel suscipit sapien, ut ullamcorper nisi. Mauris laoreet faucibus dictum. Don
                         `
 
 const Post = (props) => {
-    console.log(props)
+    const [title,setTitle] = useState('test')
+    
+    
     return (
         <div className="post_container">
             <div className="page_header_container">
                 <PageHeader
                     className="site-page-header"
-                    title="Post"
+                    title={title}
                 />
             </div>
 
