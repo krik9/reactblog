@@ -2,6 +2,7 @@ import React from 'react';
 import { PageHeader } from 'antd';
 import Post from "./Post";
 import api from "../mock_api";
+import _ from 'lodash';
 
 const Posts = (props) => {
     return (
