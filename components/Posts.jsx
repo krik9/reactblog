@@ -4,6 +4,8 @@ import Post from "./Post";
 import api from "../mock_api";
 import _ from 'lodash';
 
+
+
 const Posts = (props) => {
     return (
         <div className="posts_container">
@@ -14,10 +16,16 @@ const Posts = (props) => {
                 />
             </div>
             <div className="articles_container">
-                <Post />
-                <Post />
-                <Post />
-                <Post />
+                {
+                    _.map(api, (article) => {
+                        return (
+                            <Post
+                                title={article.title}
+                                content={article.content}
+                            />
+                        )
+                    })
+                }
 
             </div>
         </div>

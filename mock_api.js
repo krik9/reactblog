@@ -30,3 +30,5 @@ const api = [
         Maecenas luctus lorem arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel risus sit amet lacus semper tincidunt. Nunc ac urna quis lectus condimentum dignissim vel sed ligula. Maecenas euismod eu lacus sed congue. Nullam nec lectus felis. Maecenas ornare euismod libero eleifend bibendum. Pellentesque ornare dignissim ullamcorper. Proin ornare, dolor eget finibus vulputate, diam tortor ultricies purus, vel hendrerit ante metus ac erat. Etiam tempus mi non mi aliquam, lobortis suscipit lacus ultrices.`
     }
 ]
+
+export default api;
